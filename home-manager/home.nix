@@ -25,6 +25,13 @@
     feh
     gh
     ncpamixer
+    waybar
+    noto-fonts-emoji-blob-bin
+    font-awesome
+    roboto
+    liberation_ttf
+    fira
+    meslo-lgs-nf
   ];
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;
