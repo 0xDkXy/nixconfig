@@ -13,6 +13,7 @@
     foliate
     okular
     hyprland
+    xwayland
     alacritty
     wofi
     floorp
@@ -26,6 +27,9 @@
     gh
     ncpamixer
     waybar
+
+    tealdeer
+
     noto-fonts-emoji-blob-bin
     font-awesome
     roboto
@@ -36,4 +40,11 @@
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;
   programs.bash.enable = true;
+
+  i18n.inputMethod.enabled = "fcitx5";
+  i18n.inputMethod.fcitx5.addons = with pkgs; [
+    fcitx5-gtk
+    fcitx5-rime
+  ];
+  
 }
