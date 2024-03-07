@@ -97,6 +97,7 @@
     gcc
     gdb
     acpi
+    gnumake
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
