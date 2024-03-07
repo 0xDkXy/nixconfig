@@ -2,4 +2,3 @@
 #! nix-shell -i bash -p bash
 
 cp "$(pwd)/nixos/configuration.nix" /etc/nixos/configuration.nix
-ln -s "$(pwd)/home-manager/home.nix" /etc/nixos/home.nix
