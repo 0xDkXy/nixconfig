@@ -4,13 +4,18 @@
   home.username = "dkxy";
   home.homeDirectory = "/home/dkxy";
 
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Ice";
+    size = 12;
+  };
 
   home.packages = with pkgs; [
     hello
     htop
     neovim
     firefox
-    foliate
     okular
     hyprland
     xwayland
