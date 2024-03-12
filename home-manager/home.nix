@@ -41,6 +41,8 @@
     liberation_ttf
     fira
     meslo-lgs-nf
+
+    # foliate
   ];
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;
