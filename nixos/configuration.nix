@@ -19,6 +19,16 @@
     experimental-features = "nix-command flakes";
   };
 
+  # Enable printer
+  services.printing.enable = true;
+
+  # Enable autodiscovery of network printers
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
 
   # networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
