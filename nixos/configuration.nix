@@ -29,6 +29,11 @@
     openFirewall = true;
   };
 
+  nixpkgs = {
+    config.allowUnfree = true;
+  };
+
+
 
   # networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -111,7 +116,11 @@
     python3
     man-pages
     man-pages-posix
+    gnome.adwaita-icon-theme
   ];
+
+  # GTK dconf
+  programs.dconf.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

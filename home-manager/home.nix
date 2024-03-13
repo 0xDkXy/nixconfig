@@ -20,6 +20,7 @@
     hyprland
     xwayland
     alacritty
+    kitty
     wofi
     floorp
     noto-fonts-cjk-sans
@@ -42,7 +43,9 @@
     fira
     meslo-lgs-nf
 
-    # foliate
+    foliate
+
+    yazi
   ];
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;
@@ -53,5 +56,10 @@
     fcitx5-gtk
     fcitx5-rime
   ];
+
+  gtk.iconTheme = {
+    name = "Adwaita";
+    package = pkgs.gnome.adwaita-icon-theme;
+  };
   
 }
