@@ -46,6 +46,7 @@
     foliate
 
     yazi
+    proxychains-ng
   ];
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;
@@ -61,5 +62,11 @@
     name = "Adwaita";
     package = pkgs.gnome.adwaita-icon-theme;
   };
+
+  dconf = {
+    enable = true;
+    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+  };
+
   
 }
